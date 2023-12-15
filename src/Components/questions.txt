@@ -1,25 +1,25 @@
 Answer all of the questions below. Make sure to save and push answers! Good luck. 
 
 1. A React component rerenders when:
-    [] It's internal state is updated
+    [x] It's internal state is updated
     [] useEffect is called
-    [] It's props change
+    [x] It's props change
     [] An event is fired from a node in its output
 
 2. If you want to perform an action once when a component loads, you should put that code:
     [] In the body of the component function
     [] Outside the body of the compoentn function
-    [] In a call to the useEffect hook
+    [x] In a call to the useEffect hook
     [] This is impossible to do in react
 
 3. True / false: Nested components are also called child components.
-    [] True
+    [x] True
     [] False
 
 4. (Write answer below) - What does the import keyword do? What similar keyword do we use for javascript that is running in a NodeJS environment (using CommonJS)?
 
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Import keyword is similar to the require keyword in commonJS. Import will bring into the project, the resource that is being import either from a library or file. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 5. Given the following code - what is the name of the component to be rendered?
@@ -51,7 +51,7 @@ Answer all of the questions below. Make sure to save and push answers! Good luck
 
     Put name of component here: 
 
-
+FishTable is the name of the component
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6. Given the following code:
@@ -84,7 +84,7 @@ var fishData = [
     Where is fishData being passed in and how will it be referenced? And what is the ReactJS term for how fishData will be referenced?
 
     Answer: 
-
+fishData is being passed in the FishTable component and is going to be referenced as fishes in the subcomponent. The term props is how ReactJS references the data.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -118,6 +118,5 @@ var fishData = [
     What is the purpose of this code: fishes={fishData}?
 
     answer: 
-
-
+      The purpose of this code is we are prop drilling the fishData down to the FishTable component, fishData is what is referenced to in the App componet. The left side of the equals sign refer the state name that will be referenced in the FishTable component.
 
